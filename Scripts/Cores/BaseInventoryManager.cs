@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace DSC.InventorySystem
 {
-    public class BaseInventoryManager<InventoryData> : MonoBehaviour where InventoryData : struct, BaseInventoryData
+    public class BaseInventoryManager<InventoryData> : MonoBehaviour where InventoryData : struct, IInventoryData
     {
         #region Variable
 
