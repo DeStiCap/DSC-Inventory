@@ -10,7 +10,7 @@ namespace DSC.InventorySystem
 
         #region Variable - Property
 
-        protected static BaseInventoryManager<InventoryData> instance
+        protected static BaseInventoryManager<InventoryData> Instance
         {
             get
             {
@@ -69,7 +69,7 @@ namespace DSC.InventorySystem
 
         public static void RegisterInventory(Transform hTransform, InventoryData hInventory)
         {
-            if (instance == null)
+            if (Instance == null)
                 return;
 
             m_hInstance.MainRegisterInventory(hTransform, hInventory);
@@ -85,7 +85,7 @@ namespace DSC.InventorySystem
 
         public static void UnregisterInventory(Transform hTransform)
         {
-            instance?.MainUnregisterInventory(hTransform);
+            Instance?.MainUnregisterInventory(hTransform);
         }
 
         protected virtual void MainUnregisterInventory(Transform hTransform)
@@ -98,7 +98,7 @@ namespace DSC.InventorySystem
 
         public static InventoryData GetInventory(Transform hTransform)
         {
-            if (instance == null)
+            if (Instance == null)
                 return default;
 
             return m_hInstance.MainGetInventory(hTransform);
@@ -114,7 +114,7 @@ namespace DSC.InventorySystem
 
         public static bool TryGetInventory(Transform hTransform, out InventoryData hOutInventory)
         {
-            if (instance == null)
+            if (Instance == null)
             {
                 hOutInventory = default;
                 return false;
@@ -137,7 +137,7 @@ namespace DSC.InventorySystem
 
         public static void SetInventory(Transform hTransform, InventoryData hInventory)
         {
-            instance?.MainSetInventory(hTransform, hInventory);
+            Instance?.MainSetInventory(hTransform, hInventory);
         }
 
         protected virtual void MainSetInventory(Transform hTransform, InventoryData hInventory)
