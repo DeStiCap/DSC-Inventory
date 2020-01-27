@@ -1,16 +1,16 @@
 {
-    "name": "com.dsc.inventory-system",
+    "name": "com.dsc.inventory",
     "author": "Supawich Dechpuwarat",
-    "displayName": "DSC Inventory System",
-    "version": "0.0.0-preview.3",
+    "displayName": "DSC Inventory",
+    "version": "0.0.1-preview.1",
     "unity": "2019.3",
-    "keywords": [
-        "Inventory"
-    ],
-    "description": "Helper plugin for Inventory System.",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/DeStiCap/DSC-InventorySystem.git",
-		"revision": "7529e509e75f057f23e239468074c70736264076"
-	}
+		"url": "https://github.com/DeStiCap/DSC-Inventory.git",
+		"revision": "1e80bf7e2c5016d6a07f5d3972df9591ce3ea9f9"
+	},
+	"description": "Helper plugin for Inventory System.",
+    "keywords": [
+        "Inventory"
+    ]    
 }

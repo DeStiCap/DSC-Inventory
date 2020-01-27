@@ -1,4 +1,4 @@
-﻿namespace DSC.InventorySystem
+﻿namespace DSC.Inventory
 {
     public interface IInventoryData
     {

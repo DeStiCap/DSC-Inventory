@@ -1,2 +1,2 @@
-# DSC-InventorySystem
+# DSC-Inventory
  

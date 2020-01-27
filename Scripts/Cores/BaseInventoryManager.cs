@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace DSC.InventorySystem
+namespace DSC.Inventory
 {
     public class BaseInventoryManager<InventoryData> : MonoBehaviour where InventoryData : struct, IInventoryData
     {
